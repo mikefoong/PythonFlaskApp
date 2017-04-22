@@ -11,4 +11,6 @@ http://codehandbook.org/creating-a-web-app-using0-angularjs-python-mongodb
   ngApp="myApp"
   ngController="HomeCtrl"
 
-- added angularjs controls 
+- added angularjs controls in templates/list.html
+- instantiated the db in app.py
+- added angularjs controls scripts to add data into mongodb
