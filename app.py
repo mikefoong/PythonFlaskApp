@@ -20,10 +20,12 @@ def addMachine():
         portNumber = json_data['port']
 
         db.Machine.insrt_one({
-            'device':deviceName. 'ip':ipAddress, 'username':userName, 'password':password, 'port':portNumber
+            'device':deviceName, 'ip':ipAddress, 'username':userName, 'password':password, 'port':portNumber
         })
         return jasonify(status='OK',message='inserted successfully')
-    except
+
+    except Exception as e:
+        return jasonify(status='ERROR', message=str(e))
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
