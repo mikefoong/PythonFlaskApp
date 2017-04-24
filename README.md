@@ -14,3 +14,8 @@ http://codehandbook.org/creating-a-web-app-using0-angularjs-python-mongodb
 - added angularjs controls in templates/list.html
 - instantiated the db in app.py
 - added angularjs controls scripts to add data into mongodb
+
+## 201724Apr+650842-1
+- added appication scope /getMachineList
+- added angular function showlist
+- added ng-repeeat to the html code to reiterate data on the list

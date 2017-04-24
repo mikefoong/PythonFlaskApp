@@ -27,5 +27,27 @@ def addMachine():
     except Exception as e:
         return jasonify(status='ERROR', message=str(e))
 
+
+@app.route("/getMachineList", methods=['POST'])
+def getMachineList():
+    try:
+        machines = db.Machines.find()
+
+        machineList = []
+        for machine in machines:
+            print machine
+            machineItem = {
+                'device':machine['device'],
+                'ip':machine['ip'],
+                'username':machine['username'],
+                'password':machine['password'],
+                'port':machine['port'],
+                'id':machine['_id'],
+            }
+            machineList.append(machineItem)
+    except Exception as e:
+        return str(e)
+    return json.dumps(machineList)
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
