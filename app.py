@@ -35,7 +35,7 @@ def getMachineList():
 
         machineList = []
         for machine in machines:
-            print machine
+            print (machine)
             machineItem = {
                 'device':machine['device'],
                 'ip':machine['ip'],

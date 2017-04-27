@@ -19,3 +19,7 @@ http://codehandbook.org/creating-a-web-app-using0-angularjs-python-mongodb
 - added appication scope /getMachineList
 - added angular function showlist
 - added ng-repeeat to the html code to reiterate data on the list
+
+## 201728Apr+650840-1
+- debuged app.py
+- 
